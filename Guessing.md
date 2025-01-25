@@ -6,9 +6,9 @@ flowchart TD
     Input --> Check[Validate Input]
     Check -->|Valid| Compare{Is Guess Correct?}
     Check -->|Invalid| Error[Display Error Message] --> Input
-    Compare -->|Too High| FeedbackHigh[Display "Too High"] --> Input
-    Compare -->|Too Low| FeedbackLow[Display "Too Low"] --> Input
-    Compare -->|Correct| Success[Display "Correct!"] --> End([End])
+    Compare -->|Too High| FeedbackHigh[Too High] --> Input
+    Compare -->|Too Low| FeedbackLow[Too Low] --> Input
+    Compare -->|Correct| Success[Correct] --> End([End])
 ```
 
 ## Description of the Diagram
